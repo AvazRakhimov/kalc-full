@@ -28,23 +28,27 @@ body {
 
 .p1 {
     color: #a5adce;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 15px;
 }
 
 .p2 {
     color: #a5adce;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 25px;
 }
 
 .inpt1, .inpt2 {
     color: white;
-    background-color: #585b70;
+    background-color: #626880;
     font-family: Optima, sans-serif;
     margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0px;
     margin-left: auto;
     margin-right: auto;
 }
