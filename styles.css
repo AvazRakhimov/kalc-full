@@ -28,16 +28,14 @@ body {
 
 .p1 {
     color: #a5adce;
-    font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-top: 15px;
 }
 
 .p2 {
     color: #a5adce;
-    font-weight: 100;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-top: 25px;
 }
@@ -45,7 +43,7 @@ body {
 .inpt1, .inpt2 {
     color: white;
     background-color: #626880;
-    font-family: Optima, sans-serif;
+    font-weight: 550;
     margin-bottom: 25px;
     border-radius: 10px;
     box-shadow: 0px 0px 1px 0px;
@@ -81,7 +79,7 @@ body {
     position: relative;
     text-align: center;
     height: 25px;
-    font-size: medium;
+    font-size: 18px;
     overflow: hidden;
     margin-top: 15px;
     margin-bottom: 25px;
