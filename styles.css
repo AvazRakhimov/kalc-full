@@ -1,6 +1,6 @@
 
 body {
-    background-image: linear-gradient(to right, #24273a, #494d64);
+    background-image: linear-gradient(to right, #303446, #303446);
 }
 
 .border-main {
@@ -25,12 +25,12 @@ body {
 }
 
 .welcome {
+    margin-top: 50px;
     color: rgb(203, 166, 247);
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     font-size: 25px;
     text-align: center;
-    margin-top: 50px;
     padding: 15px 15px;
 }
 
