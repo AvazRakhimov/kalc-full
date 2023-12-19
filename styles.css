@@ -1,6 +1,6 @@
 
-.body {
-    background-color: #51576d;
+body {
+    background-image: linear-gradient(to right, #24273a, #494d64);
 }
 
 .border-main {
