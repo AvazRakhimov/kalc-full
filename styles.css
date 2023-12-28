@@ -1,16 +1,13 @@
-
 body {
-    background-image: radial-gradient(circle, #5b6078, #363a4f);
+    background: radial-gradient(circle, #626880 5%, #a6d189)
 }
 
 .border-main {
     background-color: #494d64;
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 25%;
-    margin: auto;
-    margin-top: 150px;
+    margin: 10% auto;
     text-align: center;
     border: 1px solid #a5adcb;
     box-shadow: 0px 0px 3px 1px;
