@@ -14,7 +14,7 @@
 }
 
 body {
-    background: radial-gradient(circle, #626880 22.5%, #6DAA81);
+    background: radial-gradient(circle, #626880 50%, #6DAA81);
 }
 
 .border-main {
@@ -81,7 +81,7 @@ body {
 .sel1 {
     background-color: #ca9ee6;
     text-align: center;
-    border: 1.5px solid black;
+    border: 0 solid black;
     padding: 1px 0.5px 1px 0.5px;
     border-radius: 10px;
     font-weight: bold;
@@ -94,7 +94,7 @@ body {
     text-align: center;
     padding: 2px 12px 2px 12px;
     color: black;
-    border: 1.5px solid black;
+    border: 0 solid black;
     border-radius: 10px;
     font-weight: bolder;
     font-size: 13px;
