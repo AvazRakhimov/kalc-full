@@ -5,7 +5,128 @@
     <link rel="icon" href="icon.jpg" type="image/jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalculate!</title>
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @font-face {
+        font-family: 'main';
+        src: url('fonts/main.otf') format('opentype');
+      }
+
+      @font-face {
+        font-family: 'simple';
+        src: url('fonts/simple.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'result';
+        src: url('fonts/result.otf') format('opentype');
+      }
+
+      body {
+        background: #626880;
+      }
+
+      .border-main,
+      footer {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+      }
+
+      .border-main {
+        transform: translate(-50%, -50%);
+        width: 360px;
+        background-color: #494d64;
+        text-align: center;
+        border: 1px solid #a5adcb;
+        box-shadow: 0px 0px 3px 1px;
+        border-radius: 30px;
+      }
+
+      @media (max-width: 600px) {
+        .border-main {
+          width: 86%;
+          border-radius: 15px;
+        }
+      }
+
+      .welcome {
+        margin-top: 50px;
+        color: rgb(203, 166, 247);
+        font-family: 'main', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        padding: 15px 15px;
+      }
+
+      .p1 {
+        color: #a5adce;
+        font-size: 15px;
+        font-family: 'simple', sans-serif;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .p2 {
+        color: #a5adce;
+        font-size: 15px;
+        font-family: 'simple', sans-serif;
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      .inpt1,
+      .inpt2 {
+        color: white;
+        background-color: #626880;
+        font-weight: 550;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 1px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .sel-main {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .sel1 {
+        background-color: #ca9ee6;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bold;
+        color: black;
+        font-size: 12px;
+      }
+
+      .res-button {
+        background-color: #f9e2af;
+        text-align: center;
+        padding: 2px 12px 2px 12px;
+        color: black;
+        border: 0 solid black;
+        border-radius: 10px;
+        font-weight: bolder;
+        font-size: 13px;
+      }
+
+      .result {
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        height: 25px;
+        font-family: 'result', sans-serif;
+        font-size: 18px;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 29px;
+        color: #6daa81;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="border-main">
@@ -24,12 +145,55 @@
       <p class="p2">Enter second number:</p>
       <input type="number" class="inpt2" id="2input" />
       <div>
-        <button class="res-button" id="result-button" onclick="calc()">=</button>
+        <button class="res-button" id="result-button" onclick="calc()">
+          =
+        </button>
       </div>
       <div>
         <p class="result" id="result"></p>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+      // Calculation //
+      function calc() {
+        let n1 = parseFloat(document.getElementById('1input').value)
+        let n2 = parseFloat(document.getElementById('2input').value)
+        let math = document.getElementById('math').value
+
+        let result
+        switch (math) {
+          case '+':
+            result = n1 + n2
+            break
+          case '-':
+            result = n1 - n2
+            break
+          case '*':
+            result = n1 * n2
+            break
+          case '/':
+            result = n1 / n2
+            break
+          case '%':
+            result = n1 % n2
+            break
+        }
+
+        document.getElementById('result').innerHTML = 'Result: ' + result
+      }
+
+      // Copy //
+      document.getElementById('result').addEventListener('click', function () {
+        const resultText = document.getElementById('result').innerText
+        navigator.clipboard
+          .writeText(resultText)
+          .then(function () {
+            alert('Result copied to clipboard!')
+          })
+          .catch(function (err) {
+            console.error('Failed to copy text: ', err)
+          })
+      })
+    </script>
   </body>
 </html>
