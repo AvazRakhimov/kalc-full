@@ -13,29 +13,32 @@
   src: url('fonts/result.otf') format('opentype');
 }
 
+::selection {
+  background-color: inherit;
+}
+
 body {
-  background-color: #626880;
+  background-color: #633D17;
 }
 
 .border-main, footer {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
 }
 
 .border-main {
   transform: translate(-50%, -50%);
   width: 360px;
-  background-color: #494d64;
+  /* background-color: #555; */
+  background-color: #7F4E1E;
   text-align: center;
-  border: 1px solid #a5adcb;
-  box-shadow: 0px 0px 3px 1px;
-  /* border-radius: 30px; */
+  outline: 2px solid #8D5D2D;
 }
 
 .welcome {
   margin-top: 40px;
-  color: rgb(203, 166, 247);
+  /* color: rgb(203, 166, 247); */
+  color: #C6A483;
   font-family: 'main', sans-serif;
   font-size: 24px;
   text-align: center;
@@ -44,16 +47,18 @@ body {
 }
 
 .p1 {
-  color: #a5adce;
-  font-size: 15px;
+  /* color: #a5adce; */
+  color: #B8916A;
+  font-size: 1em;
   font-family: 'simple', sans-serif;
   text-align: center;
   margin-top: 20px;
 }
 
 .p2 {
-  color: #a5adce;
-  font-size: 15px;
+  /* color: #a5adce; */
+  color: #B8916A;
+  font-size: 1em;
   font-family: 'simple', sans-serif;
   text-align: center;
   margin-top: 20px;
@@ -62,11 +67,11 @@ body {
 .inpt1,
 .inpt2 {
   color: white;
-  background-color: #626880;
+  background-color: #8D5D2D;
   font-weight: 550;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 1px 0px;
+  /* box-shadow: 0px 0px 1px 0px; */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -79,10 +84,16 @@ input::-webkit-inner-spin-button {
 }
 
 .btns button {
+  font-weight: bold;
   color: #fff;
-  padding: 2px 8px;
+  padding: 4px 8px;
   text-align: center;
-  background-color: inherit;
+  background-color: #9B6D3F;
+  border: none;
+}
+
+.btns button:disabled {
+  background-color: #C6A483;
 }
 
 .sel-main {
@@ -97,18 +108,19 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   font-weight: bold;
   color: black;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .res-button {
-  background-color: #f9e2af;
+  /* background-color: #f9e2af; */
+  background-color: #A97E53;
   text-align: center;
   padding: 2px 12px 2px 12px;
-  color: black;
+  color: #fff;
   border: 0 solid black;
   border-radius: 10px;
   font-weight: bolder;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .result {
@@ -121,7 +133,8 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 29px;
-  color: #6daa81;
+  /* color: #6daa81; */
+  color: #F0E6DC;
   cursor: pointer;
 }
 
