@@ -1,4 +1,4 @@
-// Calculation
+// Calculation //
 const input1 = document.getElementById('1input')
 const input2 = document.getElementById('2input')
 const resultDisplay = document.getElementById('result')
@@ -55,7 +55,8 @@ function calc() {
 }
 
 
-// Copy
+
+// Copy //
 document.getElementById('result').addEventListener('click', function () {
   const resultText = document.getElementById('result').innerText
   const valueOnly = resultText.replace('Result: ', '').trim()

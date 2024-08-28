@@ -39,11 +39,24 @@ body {
   margin-top: 40px;
   /* color: rgb(203, 166, 247); */
   color: #C6A483;
+  font-size: 26px;
   font-family: 'main', sans-serif;
-  font-size: 24px;
   text-align: center;
   padding: 15px 15px;
   cursor: pointer;
+}
+
+.edition {
+  margin: 0; padding: 0;
+  width: 130px;
+  
+  position: fixed;
+  top: 5.5em; left: 70%;
+  transform: translateX(-50%);
+
+  color: #C6A483;
+  font-size: 16px;
+  font-family: 'main', sans-serif;
 }
 
 .p1 {
@@ -66,9 +79,10 @@ body {
 
 .inpt1,
 .inpt2 {
-  color: white;
+  font-size: .9em;
+  color: #fff;
   background-color: #8D5D2D;
-  font-weight: 550;
+  font-weight: bold;
   margin-bottom: 20px;
   border-radius: 10px;
   /* box-shadow: 0px 0px 1px 0px; */
@@ -84,12 +98,13 @@ input::-webkit-inner-spin-button {
 }
 
 .btns button {
+  border: none;
+  padding: 4px 8px;
+  font-size: .9em;
   font-weight: bold;
   color: #fff;
-  padding: 4px 8px;
-  text-align: center;
   background-color: #9B6D3F;
-  border: none;
+  text-align: center;
 }
 
 .btns button:disabled {
@@ -113,14 +128,14 @@ input::-webkit-inner-spin-button {
 
 .res-button {
   /* background-color: #f9e2af; */
-  background-color: #A97E53;
-  text-align: center;
+  border: 0 solid black;
   padding: 2px 12px 2px 12px;
   color: #fff;
-  border: 0 solid black;
+  background-color: #A97E53;
+  text-align: center;
   border-radius: 10px;
-  font-weight: bolder;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: .9em;
 }
 
 .result {
