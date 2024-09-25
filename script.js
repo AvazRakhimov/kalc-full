@@ -6,14 +6,18 @@ let selectedOperator = null
 let selectedButton = null
 
 function selectOperator(operator, button) {
-  if (selectedButton) { selectedButton.disabled = false }
+  if (selectedButton) {
+    selectedButton.disabled = false
+  }
   selectedOperator = operator
   selectedButton = button
   selectedButton.disabled = true
 }
 
 document.querySelectorAll('.sel-main button').forEach((button) => {
-  button.addEventListener('click', () => selectOperator(button.textContent, button))
+  button.addEventListener('click', () =>
+    selectOperator(button.textContent, button)
+  )
 })
 
 function calc() {
@@ -22,7 +26,8 @@ function calc() {
   let result
 
   if (isNaN(num1) || isNaN(num2) || selectedOperator === null) {
-    resultDisplay.textContent = 'Please enter valid numbers and select an operator.'
+    resultDisplay.textContent =
+      'Please enter valid numbers and select an operator.'
     return
   }
 
@@ -37,8 +42,9 @@ function calc() {
       result = num1 * num2
       break
     case '/':
-      if (num2 !== 0) { result = num1 / num2 }
-      else {
+      if (num2 !== 0) {
+        result = num1 / num2
+      } else {
         resultDisplay.textContent = 'Cannot divide by zero.'
         return
       }
@@ -53,8 +59,6 @@ function calc() {
 
   resultDisplay.textContent = `Result: ${result}`
 }
-
-
 
 // Copy //
 document.getElementById('result').addEventListener('click', function () {

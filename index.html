@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
     <link rel="icon" href="icon.svg" />
-    <title>Kalculate! Chocolate Edition!</title>
-    <meta name="description" content="Kalculate! Chocolate Edition Released!" />
+    <title>Kalculate! Dark Fantasy!</title>
+    <meta name="description" content="Kalculate! Dark Fantasy Released!" />
   </head>
   <body>
-    <div class="border-main">
+    <div id="main">
       <p class="welcome" onclick="location.reload()">Kalculate!</p>
-      <p class="edition">Chocolate Edition!</p>
       <p class="p1">Enter first number:</p>
       <input type="number" class="inpt1" id="1input" />
       <div class="sel-main">
@@ -26,12 +25,8 @@
       </div>
       <p class="p2">Enter second number:</p>
       <input type="number" class="inpt2" id="2input" />
-      <div>
-        <button class="res-button" id="result-button" onclick="calc()">=</button>
-      </div>
-      <div>
-        <p class="result" id="result"></p>
-      </div>
+      <div><button class="res-button" id="result-button" onclick="calc()">=</button></div>
+      <div><p class="result" id="result"></p></div>
     </div>
     <script src="script.js"></script>
   </body>
